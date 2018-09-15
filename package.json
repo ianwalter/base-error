@@ -1,24 +1,29 @@
 {
   "name": "@ianwalter/base-error",
   "version": "1.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A general base Error class that can be extended to create custom Error classes",
+  "main": "dist/base-error.js",
+  "umd:main": "dist/base-error.umd.js",
+  "module": "dist/base-error.m.js",
   "scripts": {
-    "build": "babel -o es5.js index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "microbundle build index.js",
+    "watch": "microbundle watch index.js",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "base",
+    "error",
+    "custom",
+    "stacktrace"
+  ],
+  "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "license": "ISC",
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "jest": "^23.6.0",
+    "microbundle": "^0.6.0",
     "np": "^3.0.4"
   }
 }
