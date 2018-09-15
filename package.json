@@ -6,8 +6,8 @@
   "umd:main": "dist/base-error.umd.js",
   "module": "dist/base-error.m.js",
   "scripts": {
-    "build": "microbundle build index.js",
-    "watch": "microbundle watch index.js",
+    "build": "microbundle build index.js --compress false",
+    "watch": "microbundle watch index.js --compress false",
     "test": "jest"
   },
   "keywords": [
