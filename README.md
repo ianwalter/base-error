@@ -1,7 +1,7 @@
 # @ianwalter/base-error
 > A general base Error class that can be extended to create custom Error classes
 
-[![npm page][npm-image]][npm-url]
+[![npm page][npmImage]][npmUrl]
 
 ## Installation
 
