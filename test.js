@@ -1,19 +1,19 @@
 import test from 'ava'
 import BaseError from '.'
 
-test('BaseError should capture the message if given an Error', t => {
+test('Error message gets captured', t => {
   const msg = 'Bad Request'
   const error = new BaseError(new Error(msg))
   t.is(error.message, msg)
 })
 
-test('BaseError should capture a string parameter as the error message', t => {
+test('String message gets captured as Error message', t => {
   const msg = 'Bad Request'
   const error = new BaseError(msg)
   t.is(error.message, msg)
 })
 
-test('BaseError should capture the stacktrace if given an Error', t => {
+test('Error stacktrace gets captured', t => {
   try {
     throw new Error('Unparseable')
   } catch (err) {
@@ -24,14 +24,14 @@ test('BaseError should capture the stacktrace if given an Error', t => {
   }
 })
 
-test('BaseError should create a stacktrace if given a string', t => {
+test('String stacktrace gets captured', t => {
   const error = new BaseError('Undefined')
   const stackLines = error.stack.split('\n')
   t.is(stackLines[0], 'BaseError: Undefined')
   t.true(stackLines[1].includes('test.js:28:17'))
 })
 
-test('BaseError should be able to be extended to create a custom Error', t => {
+test('Class extension', t => {
   class CustomError extends BaseError {
     constructor (err, code) {
       super(err)
@@ -49,7 +49,7 @@ test('BaseError should be able to be extended to create a custom Error', t => {
   t.is(error.code, code)
 })
 
-test('BaseError should output additional params', t => {
+test('Multiple parameter handling', t => {
   const msg = 'Bad Request'
   const arg2 = { thisis: { nested: true } }
   const arg3 = [1, 2, 3]
