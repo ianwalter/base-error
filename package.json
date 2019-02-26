@@ -1,6 +1,6 @@
 {
   "name": "@ianwalter/base-error",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "A general base Error class that can be extended to create custom Error classes",
   "main": "dist/base-error.js",
   "module": "dist/base-error.m.js",
