@@ -5,9 +5,9 @@
   "main": "dist/base-error.js",
   "module": "dist/base-error.m.js",
   "scripts": {
-    "lint": "eslint index.js test.js",
+    "lint": "eslint index.js tests.js",
     "pretest": "dist --babel",
-    "test": "ava"
+    "test": "bff"
   },
   "keywords": [
     "base",
@@ -21,14 +21,14 @@
     "dist"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.2.0"
+    "@babel/runtime-corejs3": "^7.4.4"
   },
   "devDependencies": {
     "@ianwalter/babel-preset-lib": "^1.0.4",
+    "@ianwalter/bff": "^4.0.1",
     "@ianwalter/dist": "^3.1.0",
     "@ianwalter/eslint-config": "^1.1.2",
     "@ianwalter/renovate-config": "^1.1.0",
-    "ava": "^1.0.1",
     "np": "^5.0.1"
   },
   "browserslist": "> 2%, not dead",
