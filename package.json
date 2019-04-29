@@ -27,12 +27,11 @@
     "@ianwalter/babel-preset-lib": "^1.0.4",
     "@ianwalter/dist": "^3.0.0",
     "@ianwalter/eslint-config": "^1.0.0",
+    "@ianwalter/renovate-config": "^1.1.0",
     "ava": "^1.0.1",
     "np": "^5.0.0"
   },
-  "browserslist": [
-    "> 0.5%"
-  ],
+  "browserslist": "> 2%, not dead",
   "babel": {
     "presets": [
       "@ianwalter/lib"
@@ -41,7 +40,12 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@ianwalter/eslint-config"
+      "@ianwalter"
+    ]
+  },
+  "renovate": {
+    "extends": [
+      "@ianwalter"
     ]
   }
 }
