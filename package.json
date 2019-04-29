@@ -21,7 +21,7 @@
     "dist"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.2.0"
+    "@babel/runtime": "^7.4.4"
   },
   "devDependencies": {
     "@ianwalter/babel-preset-lib": "^1.0.4",
