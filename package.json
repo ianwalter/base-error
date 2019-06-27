@@ -5,8 +5,8 @@
   "main": "dist/base-error.js",
   "module": "dist/base-error.m.js",
   "scripts": {
-    "lint": "eslint index.js tests.js",
-    "pretest": "dist --babel",
+    "lint": "eslint .",
+    "pretest": "dist",
     "test": "bff"
   },
   "keywords": [
@@ -20,11 +20,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "@babel/runtime-corejs3": "^7.4.5"
-  },
   "devDependencies": {
-    "@ianwalter/babel-preset-lib": "^2.0.2",
     "@ianwalter/bff": "^6.3.1",
     "@ianwalter/dist": "^5.0.1",
     "@ianwalter/eslint-config": "^2.0.1",
@@ -32,17 +28,15 @@
     "np": "^5.0.3"
   },
   "browserslist": "> 2%, not dead",
-  "babel": {
-    "presets": [
-      "@ianwalter/lib"
-    ]
-  },
   "eslintConfig": {
     "root": true,
     "extends": [
       "@ianwalter"
     ]
   },
+  "eslintIgnore": [
+    "dist"
+  ],
   "renovate": {
     "extends": [
       "@ianwalter"
