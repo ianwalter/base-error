@@ -54,6 +54,5 @@ test('Multiple parameter handling', ({ expect }) => {
   const arg2 = { thisis: { nested: true } }
   const arg3 = [1, 2, 3]
   const err = new BaseError(msg, arg2, arg3)
-  expect(err.message)
-    .toBe(`${msg}\n${JSON.stringify(arg2)}\n${JSON.stringify(arg3)}`)
+  expect(err.message).toMatchSnapshot()
 })

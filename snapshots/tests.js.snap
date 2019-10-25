@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Multiple parameter handling 1`] = `
+"Bad Request
+{
+  \\"thisis\\": {
+    \\"nested\\": true
+  }
+}
+[
+  1,
+  2,
+  3
+]"
+`;
