@@ -16,7 +16,7 @@ npm install @ianwalter/base-error --save
 import BaseError from '@ianwalter/base-error'
 
 // Extend BaseError to create your custom error and optionally pass additional
-// data to be included in the error message/object.
+// data to be included in the error message.
 class SomeError extends BaseError {
   constructor (details) {
     super('Something happened', details)
