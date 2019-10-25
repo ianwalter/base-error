@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "dist",
-    "test": "bff"
+    "test": "bff",
+    "example": "node example.js"
   },
   "keywords": [
     "base",
@@ -15,7 +16,10 @@
     "custom",
     "stacktrace"
   ],
-  "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
+  "author": {
+    "name": "Ian Walter",
+    "url": "https://ianwalter.dev"
+  },
   "license": "SEE LICENSE IN LICENSE",
   "files": [
     "dist"
@@ -24,10 +28,10 @@
     "@ianwalter/bff": "^6.5.2",
     "@ianwalter/dist": "^5.3.0",
     "@ianwalter/eslint-config": "^3.0.0",
+    "@ianwalter/print": "^3.6.0",
     "@ianwalter/release": "^3.0.5",
     "@ianwalter/renovate-config": "^1.2.0"
   },
-  "browserslist": "> 2%, not dead",
   "eslintConfig": {
     "root": true,
     "extends": [

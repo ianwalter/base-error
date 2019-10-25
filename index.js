@@ -1,22 +1,19 @@
-function formatErrorMessage (msg, additional) {
-  return additional.length
-    ? additional.reduce((a, c) => `${a}\n${JSON.stringify(c)}`, msg)
-    : msg
-}
+const format = (msg, rest) => rest.length
+  ? rest.reduce((acc, i) => `${acc}\n${JSON.stringify(i, undefined, 2)}`, msg)
+  : msg
 
 export default class BaseError extends Error {
-  constructor (err, ...additional) {
-    super(formatErrorMessage(err, additional))
+  constructor (err, ...rest) {
     if (err instanceof Error) {
+      super(format(err.message, rest))
       this.original = err
       this.stack = err.stack
-      this.message = formatErrorMessage(err.message, additional)
     } else {
+      super(format(err, rest))
       if (Error.captureStackTrace) {
         Error.captureStackTrace(this, this.constructor)
       }
-      this.message = formatErrorMessage(err, additional)
     }
-    this.name = this.constructor.name
+    //this.name = this.constructor.name
   }
 }
