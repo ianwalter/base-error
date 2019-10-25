@@ -14,6 +14,6 @@ export default class BaseError extends Error {
         Error.captureStackTrace(this, this.constructor)
       }
     }
-    //this.name = this.constructor.name
+    this.name = this.constructor.name
   }
 }
