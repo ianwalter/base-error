@@ -29,7 +29,7 @@
     "@ianwalter/dist": "^5.3.0",
     "@ianwalter/eslint-config": "^3.1.0",
     "@ianwalter/print": "^4.0.2",
-    "@ianwalter/release": "^3.0.6",
+    "@ianwalter/release": "^3.0.7",
     "@ianwalter/renovate-config": "^1.2.0"
   },
   "eslintConfig": {
