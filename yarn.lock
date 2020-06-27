@@ -357,10 +357,10 @@
     rollup-plugin-node-resolve "^5.2.0"
     rollup-plugin-terser "^5.2.0"
 
-"@ianwalter/dot@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@ianwalter/dot/-/dot-1.0.3.tgz#2d586710573526e07d65c499a3c86fe4b3d7a849"
-  integrity sha512-LZvhyVQn5BM0/5lANNz3Nh9sTGD5JvZdEmkg5UsN+bQXpRUI9yokw+HjDKjTAnRdpF93pBhfLXAIPebRA/RBBA==
+"@ianwalter/dot@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@ianwalter/dot/-/dot-1.0.4.tgz#32d9f98d59382475798c65bf686e95328327bfd3"
+  integrity sha512-bq6q4ZXWzQfBbE29i6trTwAtmmRzSWU0D/fSPhA/tDNbxhSlXDYUxfITtq1cctqi+s4BV4PgYIjxNkLeePK1mQ==
 
 "@ianwalter/eslint-config@^5.1.0":
   version "5.1.0"
@@ -514,15 +514,15 @@
     marked-terminal "^4.1.0"
     strip-ansi "^6.0.0"
 
-"@ianwalter/print@^8.0.2":
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-8.0.2.tgz#7df354703a66ce6352bbb5aadc85f6438ef0b6b6"
-  integrity sha512-AuKqIO25J4iZmpFeC3Ykx8StLP9PzoLhDP7+1SCSPno8hFmDySaWtPJhp07fcyWqxTDT8b2cyVD0IvyQCZRPWA==
+"@ianwalter/print@^8.0.3":
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-8.0.3.tgz#28f520eabff2068f93aeace20ca56e07595946d1"
+  integrity sha512-wq6DdjY3N760nf4mJioub45ZLL+8G9UohSV+yUh69iZ0tHzvztWvBxWT3m8H1W41NEIIWWkpXl/jz8WV4n/Srg==
   dependencies:
     "@ianwalter/chromafi" "^1.0.1"
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/clone" "^6.0.1"
-    "@ianwalter/dot" "^1.0.3"
+    "@ianwalter/dot" "^1.0.4"
     "@ianwalter/merge" "^9.0.1"
     chalk "^4.1.0"
     has-ansi "^4.0.0"
