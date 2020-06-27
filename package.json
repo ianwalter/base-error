@@ -28,7 +28,7 @@
     "@ianwalter/bff": "^9.9.1",
     "@ianwalter/dist": "^6.0.0",
     "@ianwalter/eslint-config": "^5.1.0",
-    "@ianwalter/print": "^8.0.2",
+    "@ianwalter/print": "^8.0.3",
     "@ianwalter/release": "^5.0.2",
     "@ianwalter/renovate-config": "^1.3.0"
   },
