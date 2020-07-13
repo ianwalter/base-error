@@ -514,14 +514,15 @@
     marked-terminal "^4.1.0"
     strip-ansi "^6.0.0"
 
-"@ianwalter/print@^8.0.4":
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-8.0.4.tgz#6257ce8f8e7a1d71bc1805696bfa0b521455c056"
-  integrity sha512-XizAXpyo7kyhGZ/PdeGF2oNqlnWmhGuI+2e5ofNOZlwn6+yuAX4Ph1Wor0dxyNi41N0ERBZcJG5slV+nNaeETw==
+"@ianwalter/print@^8.0.5":
+  version "8.0.5"
+  resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-8.0.5.tgz#6cb0eab5f6663ba1a02fc8f1e989d316f5b7ad87"
+  integrity sha512-i8wUEyEa9BZMbzhFHJ29CEjzZXBvu0ckjWkVZOuUOE96LkA3jI1vWtHD+EHzIK/r54STjUGKAp3EyeiEhK4e+w==
   dependencies:
     "@ianwalter/chromafi" "^1.0.1"
     "@ianwalter/cli" "^4.1.0"
     "@ianwalter/clone" "^6.0.1"
+    "@ianwalter/cloneable" "^2.0.0"
     "@ianwalter/dot" "^1.0.4"
     "@ianwalter/merge" "^9.0.1"
     chalk "^4.1.0"
